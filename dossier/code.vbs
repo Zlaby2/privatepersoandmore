@@ -6,7 +6,7 @@ voix.Rate = 0 ' Vitesse normale
 voix.Volume = 100 ' Volume au maximum
 
 
-Récupérer le chemin du dossier du script
+' Récupérer le chemin du dossier du script
 scriptPath = fso.GetParentFolderName(WScript.ScriptFullName)
 audioPath = scriptPath & "\musique.mp3" ' Nom du fichier audio
 
