@@ -6,11 +6,11 @@ voix.Rate = 0 ' Vitesse normale
 voix.Volume = 100 ' Volume au maximum
 
 
-' Récupérer le chemin du dossier du script
-' scriptPath = fso.GetParentFolderName(WScript.ScriptFullName)
-' audioPath = scriptPath & "\musique.mp3" ' Nom du fichier audio
+Récupérer le chemin du dossier du script
+scriptPath = fso.GetParentFolderName(WScript.ScriptFullName)
+audioPath = scriptPath & "\musique.mp3" ' Nom du fichier audio
 
-texte = "Je contrôle votre ordinateur. Vous ne pouvez pas m'arrêter."
+texte = "HE HE HE AAAAAAAAh!"
 voix.Speak texte
 
 ' Configurer et jouer la musique en boucle
@@ -21,5 +21,6 @@ player.controls.play
 
 ' Fenêtre en boucle (impossible à fermer proprement)
 Do
-    MsgBox "Votre PC est sous contrôle !", 16, "Alerte Système"
+    MsgBox "Ba alors, tu t'est fait avoir", 16, "Alerte Système"
+    
 Loop
