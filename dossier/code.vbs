@@ -1,17 +1,17 @@
 ' Créer les objets nécessaires
 Set player = CreateObject("WMPlayer.OCX")
 Set fso = CreateObject("Scripting.FileSystemObject")
-Set voix = CreateObject("SAPI.SpVoice")
-voix.Rate = 0 ' Vitesse normale
-voix.Volume = 100 ' Volume au maximum
+' Set voix = CreateObject("SAPI.SpVoice")
+' voix.Rate = 0 ' Vitesse normale
+' voix.Volume = 100 ' Volume au maximum
 
 
 ' Récupérer le chemin du dossier du script
 scriptPath = fso.GetParentFolderName(WScript.ScriptFullName)
 audioPath = scriptPath & "\musique.mp3" ' Nom du fichier audio
 
-texte = "HE HE HE AAAAAAAAh!"
-voix.Speak texte
+' texte = "HE HE HE AAAAAAAAh!"
+' voix.Speak texte
 
 ' Configurer et jouer la musique en boucle
 Set media = player.newMedia(audioPath)
