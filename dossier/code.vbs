@@ -1,5 +1,5 @@
 ' Créer les objets nécessaires
-Set player = CreateObject("WMPlayer.OCX")
+' Set player = CreateObject("WMPlayer.OCX")
 Set fso = CreateObject("Scripting.FileSystemObject")
 ' Set voix = CreateObject("SAPI.SpVoice")
 ' voix.Rate = 0 ' Vitesse normale
